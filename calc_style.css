@@ -1,0 +1,35 @@
+ .calc{
+       
+        background-color: #f49845;
+        padding: 8px;
+        border: solid;
+        border-radius: 20px;
+        display :inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%; 
+        translate: -50% -50%;       
+    }
+    
+    .button {
+        border: white solid;
+        font-size:1.2em;
+        padding:10px ;
+        border: solid  salmon;
+        border-radius: 18px ;
+    }
+    
+    .screen{
+        display: flex;
+        background-color: aliceblue;
+        
+    }
+
+    .equal{
+         border: white solid;
+        font-size:1.2em;
+        padding:10px ;
+        border: solid  salmon;
+        border-radius: 18px ;
+        
+    }
