@@ -1,12 +1,24 @@
-// Grab the screen and all buttons
-const screen = document.querySelector(".screen input");
-const buttons = document.querySelectorAll(".button"); // note: this does NOT include the "=" button, since it has class="equal"
+const screen = document.querySelector('.screen input');
+const buttons = document.querySelectorAll('.button');
+const equalButton = document.querySelector('.equal');
 
-let expression = ""; // our "memory"
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const value = btn.textContent;
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    expression += button.textContent; // e.g. "1" then "2" then "+" ...
-    screen.value = expression;
-  });
+        if (value === 'Clear') {
+            screen.value = '';
+        } else {
+            screen.value += value;
+        }
+    });
+});
+
+equalButton.addEventListener('click', () => {
+    try {
+        // eslint-disable-next-line no-eval
+        screen.value = eval(screen.value);
+    } catch (err) {
+        screen.value = 'Error';
+    }
 });
