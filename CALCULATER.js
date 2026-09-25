@@ -8,6 +8,8 @@ buttons.forEach(btn => {
 
         if (value === 'Clear') {
             screen.value = '';
+        } else if (value === '⌫' || value === 'Backspace') {
+            screen.value = screen.value.slice(0, -1);
         } else {
             screen.value += value;
         }
@@ -16,7 +18,6 @@ buttons.forEach(btn => {
 
 equalButton.addEventListener('click', () => {
     try {
-        // eslint-disable-next-line no-eval
         screen.value = eval(screen.value);
     } catch (err) {
         screen.value = 'Error';
