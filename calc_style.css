@@ -1,9 +1,9 @@
  .calc{
        
-        background-color: #f49845;
-        padding: 8px;
+        background-color: #701ded;
+        padding: 7px;px;
         border: solid;
-        border-radius: 20px;
+        border-radius: 25px;
         display :inline-block;
         position: fixed;
         top: 50%;
@@ -15,7 +15,7 @@
         border: white solid;
         font-size:1.2em;
         padding:10px ;
-        border: solid  salmon;
+        border: solid  #701ded;
         border-radius: 18px ;
     }
     
@@ -29,7 +29,7 @@
          border: white solid;
         font-size:1.2em;
         padding:10px ;
-        border: solid  salmon;
+        border: solid  #701ded;
         border-radius: 18px ;
         
     }
