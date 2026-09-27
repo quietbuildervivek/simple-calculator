@@ -1,9 +1,9 @@
  .calc{
        
         background-color: #701ded;
-        padding: 7px;
+        padding: 10px;
         border: solid;
-        border-radius: 25px;
+        border-radius: 40px;
         display :inline-block;
         position: fixed;
         top: 50%;
